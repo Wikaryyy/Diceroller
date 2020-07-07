@@ -1,0 +1,73 @@
+body
+{
+    background-color: #645F64;
+    font-family: 'Fondamento', cursive;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > h1
+{
+    margin-top: 60px;
+    color:white;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 2px 2px black;
+}
+
+
+#imgContainer
+{
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    width:1425px ;
+    animation-name:from0to100 ;
+    animation-duration: 4s;
+}
+
+
+
+
+
+#circle
+{
+    margin-top:140px ;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px black;
+    padding-top: 50px;
+    font-size: 45px;
+    width: 167px;
+    height: 114px;
+    background-color: #545054;
+    border-radius: 360px;
+    -webkit-box-shadow: 14px 13px 22px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 13px 22px -12px rgba(0,0,0,0.75);
+    box-shadow: 14px 13px 22px -12px rgba(0,0,0,0.75);
+}
+
+#rollInformation
+{
+    margin-top: 25px;
+    font-size: 45px;
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px black;
+}
+
+footer
+{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+@keyframes from0to100
+{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}

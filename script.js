@@ -1,3 +1,5 @@
+import {roll} from './rpg.js';
+
 var highest = 'green';
 var lowest = 'red';
 var normal = 'white';
@@ -13,7 +15,7 @@ function roll4(){
     rollingSound();
     setTimeout(rolld4, 2000);
     function rolld4(){
-        let rollinf = Math.floor(Math.random() * 4) + 1;
+        let rollinf = roll(4);
 
             switch(rollinf){
                 case 1:
@@ -41,7 +43,7 @@ function roll6(){
     rollingSound();
     setTimeout(rolld6, 2000);
     function rolld6(){
-        let rollinf = Math.floor(Math.random() * 6) + 1;
+        let rollinf = roll(6);
         switch(rollinf){
             case 1:
             document.getElementById("circle").innerHTML = rollinf;
@@ -68,7 +70,7 @@ function roll8(){
     rollingSound();
     setTimeout(rolld8, 2000);
     function rolld8(){
-        let rollinf = Math.floor(Math.random() * 8) + 1;
+        let rollinf = roll(8);
         switch(rollinf){
             case 1:
             document.getElementById("circle").innerHTML = rollinf;
@@ -95,7 +97,7 @@ function roll10(){
     rollingSound();
     setTimeout(rolld10, 2000);
     function rolld10(){
-        let rollinf= Math.floor(Math.random() * 10) + 1;
+        let rollinf= roll(10);
         switch(rollinf){
             case 1:
             document.getElementById("circle").innerHTML = rollinf;
@@ -122,7 +124,7 @@ function roll12(){
     rollingSound();
     setTimeout(rolld12, 2000);
     function rolld12(){
-        let rollinf = Math.floor(Math.random() * 12) + 1;
+        let rollinf = roll(12);
         switch(rollinf){
             case 1:
             document.getElementById("circle").innerHTML = rollinf;
@@ -149,7 +151,7 @@ function roll20(){
     rollingSound();
     setTimeout(rolld20, 2000);
     function rolld20(){
-        let rollinf = Math.floor(Math.random() * 20) + 1;
+        let rollinf = roll(20);
         switch(rollinf){
             case 1:
             document.getElementById("circle").innerHTML = rollinf;
@@ -176,7 +178,7 @@ function roll100(){
     rollingSound();
     setTimeout(rolld100, 2000);
     function rolld100(){
-        let rollinf = Math.floor(Math.random() * 100) + 1;
+        let rollinf = roll(100);
         switch(rollinf){
             case 1:
             document.getElementById("circle").innerHTML = rollinf;

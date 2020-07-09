@@ -1,4 +1,4 @@
-import {roll} from './rpg.js';
+
 
 var highest = 'green';
 var lowest = 'red';
@@ -10,6 +10,11 @@ function rollingSound(){
     new Audio('rollSound.wav').play();
 }
 //If u want to use your own roll sound just change the path in the variable rollingSound()
+
+function roll(highestNumber){
+    var result =  Math.floor(Math.random() * highestNumber) + 1;
+    return result;
+ }
 
 function roll4(){
     rollingSound();
@@ -125,6 +130,7 @@ function roll12(){
     setTimeout(rolld12, 2000);
     function rolld12(){
         let rollinf = roll(12);
+
         switch(rollinf){
             case 1:
             document.getElementById("circle").innerHTML = rollinf;

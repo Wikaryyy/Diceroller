@@ -7,7 +7,7 @@ var normal = 'white';
 function rollingSound(){
     new Audio('rollSound.wav').play();
 }
-//If u want to use your own roll sound just change the path in the variable rollingSound().
+//If u want to use your own roll sound just change the path in the variable rollingSound()
 
 function roll4(){
     rollingSound();
@@ -78,12 +78,12 @@ function roll8(){
             case 8:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = highest;  
-            document.getElementById("rollInformation").innerHTML = "D8getting rolled!";
+            document.getElementById("rollInformation").innerHTML = "D8 getting rolled!";
             break;
             default:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = normal;  
-            document.getElementById("rollInformation").innerHTML = "D8getting rolled!";
+            document.getElementById("rollInformation").innerHTML = "D8 getting rolled!";
         }
     }
 }

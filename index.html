@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>index</title>
+    <title>DiceRoller</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,8 +11,18 @@
   </head>
 
   <body>
-      <header><h1>Dice Roller</h1></header>
+        <aside>
+          <h1>Roll History</h1>
+          <div id="rollHistory">
+
+            
+          </div>
+        </aside>
+
+      <div id="container">
+        <header><h1>Dice Roller</h1></header>
       <main>
+        
           <div id="circle"></div>
           <div id="rollInformation">Choose the dice to roll!</div>
 
@@ -27,6 +37,8 @@
           </div>
       </main>
       <footer><h1 onclick="email()">Website was made by: Wikary 1986</h1></footer>
+      </div>  
+      
     
       <script src="script.js"></script>
   </body>

@@ -1,9 +1,11 @@
 var n = 1;
 var intNumberToRemove = 1;
+var rollHistory = document.getElementById("rollHistory");
+// Do not change this Variables
+
 var highest = 'green';
 var lowest = 'red';
 var normal = 'white';
-var rollHistory = document.getElementById("rollHistory");
 // U can use this variables to change color of the lowest and highest roll.
 
 function removeElement(elementId) {
@@ -13,8 +15,8 @@ function removeElement(elementId) {
 //This function removes specified element by it's ID
 
 function refrestList(){
-    var count = rollHistory.getElementsByTagName('img').length;
-    if (count === 6){
+    var countOfImages = rollHistory.getElementsByTagName('img').length;
+    if (countOfImages === 6){
     removeElement(""+intNumberToRemove+"");
     intNumberToRemove++;
     }
@@ -47,6 +49,7 @@ function roll4(){
                 n++;
                 refrestList();
                 break;
+
                 case 4:
                 document.getElementById("circle").innerHTML = rollinf; 
                 document.getElementById("circle").style.color = highest;  
@@ -55,6 +58,7 @@ function roll4(){
                 n++;
                 refrestList();
                 break;
+
                 default:
                 document.getElementById("circle").innerHTML = rollinf; 
                 document.getElementById("circle").style.color = normal;  
@@ -83,6 +87,7 @@ function roll6(){
             n++;
             refrestList();
             break;
+
             case 6:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = highest;  
@@ -90,8 +95,8 @@ function roll6(){
             rollHistory.innerHTML += "<span id='"+n+"' style='color:"+highest+";'><img src='dices/d6.png' alt='d6' style='width: 100px; height:100px; vertical-align: middle;'>"+rollinf+"<br></span> "; 
             n++;
             refrestList();
-            
             break;
+
             default:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = normal;  
@@ -121,6 +126,7 @@ function roll8(){
             n++;
             refrestList();
             break;
+
             case 8:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = highest;  
@@ -129,6 +135,7 @@ function roll8(){
             n++;
             refrestList();
             break;
+
             default:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = normal;  
@@ -158,6 +165,7 @@ function roll10(){
             n++;
             refrestList();
             break;
+
             case 10:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = highest;  
@@ -166,6 +174,7 @@ function roll10(){
             n++;
             refrestList();
             break;
+
             default:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = normal;  
@@ -196,6 +205,7 @@ function roll12(){
             n++;
             refrestList();
             break;
+
             case 12:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = highest;  
@@ -204,6 +214,7 @@ function roll12(){
             n++;
             refrestList();
             break;
+
             default:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = normal;  
@@ -233,6 +244,7 @@ function roll20(){
             n++;
             refrestList();
             break;
+
             case 20:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = highest;  
@@ -241,6 +253,7 @@ function roll20(){
             n++;
             refrestList();
             break;
+
             default:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = normal;  
@@ -270,6 +283,7 @@ function roll100(){
             n++;
             refrestList();
             break;
+
             case 100:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = highest;  
@@ -278,6 +292,7 @@ function roll100(){
             n++;
             refrestList();
             break;
+                
             default:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = normal;  
@@ -293,6 +308,6 @@ function roll100(){
 
 
 function email(){
-    alert("Webmasters e-mail: Wikary1986@wp.pl")
+    alert("Webmasters e-mail: TWikary1986@gmail.com")
 }
 

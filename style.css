@@ -77,6 +77,12 @@ img
     height: 100px;
     width: 100px;
     opacity: 0.5;
+    
+}
+
+img:focus
+{
+    outline: none;
 }
 
 img:hover
@@ -146,6 +152,11 @@ footer
     text-align: center;
     color: white;
     text-shadow: 2px 2px black;
+}
+
+footer:hover
+{
+    cursor: pointer;
 }
 
 

@@ -1,18 +1,18 @@
+//TODO: Acing Dices
+
+
 var n = 1;
 var intNumberToRemove = 1;
 var rollHistory = document.getElementById("rollHistory");
 var changeButton = document.getElementById("changeButton");
 // Do not change this Variables
 
-
-
 var highest = 'green';
 var lowest = 'red';
 var normal = 'white';
 // U can use this variables to change color of the lowest and highest roll.
 
-
-function test(){
+function changeColors(){
     var listHighest = document.getElementById("highest");
     var usersChoiceForHighest = listHighest.options[listHighest.selectedIndex].text;
     var listLowest = document.getElementById("lowest");
@@ -20,9 +20,7 @@ function test(){
     highest = usersChoiceForHighest;
     lowest = usersChoiceForLowest;
 }
-
-
-
+//This function is used to change dice colors.
 
 function reset_animation(dice) {
     var el = document.getElementById(dice);
@@ -31,19 +29,13 @@ function reset_animation(dice) {
     el.style.animation = null; 
   }
 
-//This function resets rolling Animation
+//This function resets rolling Animation.
 
 function removeElement(elementId) {
     document.getElementById(elementId).remove();
  }
 
- function removeElementAnimation(elementId) {
-    document.getElementById(elementId).style.animationDuration.remove();
-    document.getElementById(elementId).style.animationName.remove();
- }
-
-
-//This function removes specified element by it's ID
+//This function removes specified element by it's ID.
 
 function refrestList(){
     var countOfImages = rollHistory.getElementsByTagName('img').length;
@@ -52,8 +44,7 @@ function refrestList(){
     intNumberToRemove++;
     }
  }
-//This function refreshes the rollHistory if it's too full
-
+//This function refreshes the rollHistory if it's too full.
 
 function rollingSound(){
     new Audio('rollSound.wav').play();
@@ -64,10 +55,10 @@ function roll(highestNumber){
     var result =  Math.floor(Math.random() * highestNumber) + 1;
     return result;
  }
+//This function is used for rolling the dices.
 
 function roll4(){
     rollingSound();
-   // document.getElementById("d4").style.animation = "doABarrelRoll 2s";
     reset_animation("d4");
     setTimeout(rolld4, 2000);
     function rolld4(){
@@ -105,8 +96,6 @@ function roll4(){
      
     }
     
-    
-
 function roll6(){
     rollingSound();
     reset_animation("d6");
@@ -143,9 +132,6 @@ function roll6(){
         } 
     }    
 }
-
-
-
 
 function roll8(){
     rollingSound();
@@ -184,9 +170,6 @@ function roll8(){
     }
 }
 
-
-
-
 function roll10(){
     rollingSound();
     reset_animation("d10");
@@ -211,21 +194,18 @@ function roll10(){
             n++;
             refrestList();
             break;
-
+            
             default:
             document.getElementById("circle").innerHTML = rollinf;
             document.getElementById("circle").style.color = normal;  
             document.getElementById("rollInformation").innerHTML = "D10 getting rolled!";
-            rollHistory.innerHTML += "<span id='"+n+"'><img src='dices/d10.png' alt='d10' style='width: 100px; height:100px; vertical-align: middle;'>"+rollinf+"<br></span> "; 
+            rollHistory.innerHTML += "<span id='"+n+"' ><img src='dices/d10.png' alt='d10' style='width: 100px; height:100px; vertical-align: middle;'>"+rollinf+"<br></span> "; 
             n++;
             refrestList();
             break;
         } 
     }
 }
-
-
-
 
 function roll12(){
     rollingSound();
@@ -265,9 +245,6 @@ function roll12(){
     }
 }
 
-
-
-
 function roll20(){
     rollingSound();
     reset_animation("d20");
@@ -305,9 +282,6 @@ function roll20(){
     }
 }
 
-
-
-
 function roll100(){
     rollingSound();
     reset_animation("d100");
@@ -344,8 +318,6 @@ function roll100(){
         } 
     }
 }
-
-
 
 function email(){
     alert("Webmasters e-mail: TWikary1986@gmail.com")

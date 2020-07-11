@@ -22,48 +22,53 @@
         </aside>
         <aside id="right">
           <h1>Options</h1>
-
-          <form>
-            <label for="highest">Set the color of the highest roll:</label><br>
-            <select name="colors" id="highest">
-              <option value="green">Green</option>
-              <option value="red">Red</option>
-              <option value="yellow">Yellow</option>
-              <option value="blue">Blue</option>
-              <option value="purple">Purple</option>
-            </select>  
-            <br>
-            <label for="lowest">Set the color of the lowest roll:</label><br>
-            <select name="colors" id="lowest">
-              <option value="red">Red</option>
-              <option value="green">Green</option>
-              <option value="yellow">Yellow</option>
-              <option value="purple">Purple</option>
-            </select>
-            <br>
-            <button type="button" id="changeButton" onclick="test()">Change the Colors!</button>
-          </form>
+            <form>
+              <label for="highest">Set the color of the highest roll:</label><br>
+                    <select name="colors" id="highest">
+                      <option value="green">Green</option>
+                      <option value="red">Red</option>
+                      <option value="yellow">Yellow</option>
+                      <option value="blue">Blue</option>
+                      <option value="purple">Purple</option>
+                      <option value="orange">Orange</option>
+                      <option value="pink">Pink</option>
+                    </select>  
+              <br>
+              <label for="lowest">Set the color of the lowest roll:</label><br>
+                    <select name="colors" id="lowest">
+                      <option value="red">Red</option>
+                      <option value="green">Green</option>
+                      <option value="yellow">Yellow</option>
+                      <option value="purple">Purple</option>
+                      <option value="orange">Orange</option>
+                      <option value="pink">Pink</option>
+                    </select>
+              <br>
+              <button type="button" id="changeButton" onclick="changeColors()">Change the Colors!</button>
+            </form>
         </aside>
 
       <div id="container">
-        <header><h1>Dice Roller</h1></header>
-      <main>
-        
-          <div id="circle"></div>
-          <div id="rollInformation">Choose the dice to roll!</div>
+          
+          <header><h1>Dice Roller</h1></header>
+          <main>
+            
+              <div id="circle"></div>
+              
+              <div id="rollInformation">Choose the dice to roll!</div>
 
-          <div id="imgContainer">
-                <img src="dices/d4.png" alt="d4" id="d4" onclick="roll4()">
-                <img src="dices/d6.png" alt="d6" id="d6" onclick="roll6()">
-                <img src="dices/d8.png" alt="d8" id="d8" onclick="roll8()">
-                <img src="dices/d10.png" alt="d10" id="d10" onclick="roll10()">
-                <img src="dices/d12.png" alt="d12" id="d12" onclick="roll12()">
-                <img src="dices/d20.png" alt="d20" id="d20" onclick="roll20()">
-                <img src="dices/d100.png" alt="d100" id="d100" onclick="roll100()">
-          </div>
-      </main>
-      
-      <footer><h1 onclick="email()">Website was made by: Wikary 1986</h1></footer>
+              <div id="imgContainer">
+                    <img src="dices/d4.png" alt="d4" id="d4" onclick="roll4()" focusable="false">
+                    <img src="dices/d6.png" alt="d6" id="d6" onclick="roll6()" focusable="false">
+                    <img src="dices/d8.png" alt="d8" id="d8" onclick="roll8()" focusable="false">
+                    <img src="dices/d10.png" alt="d10" id="d10" onclick="roll10()" focusable="false">
+                    <img src="dices/d12.png" alt="d12" id="d12" onclick="roll12()" focusable="false">
+                    <img src="dices/d20.png" alt="d20" id="d20" onclick="roll20()" focusable="false">
+                    <img src="dices/d100.png" alt="d100" id="d100" onclick="roll100()" focusable="false">
+              </div>
+
+          </main>
+          <footer><h1 onclick="email()">Website was made by: Wikary 1986</h1></footer>
       </div>  
       
     

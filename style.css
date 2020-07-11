@@ -20,7 +20,7 @@ header > h1
     text-shadow: 2px 2px black;
 }
 
-aside
+#left
 {
     margin-top: 100px;
     margin-left: 20px;
@@ -30,6 +30,28 @@ aside
     width: 300px;
     height: 600px;
     float: left;
+    background-color: #423D3C;
+    font-size: 20px;
+    animation-name:from0to100;
+    animation-duration: 4s;
+}
+
+label
+{
+    color:white;
+}
+
+
+#right
+{
+    margin-top: 100px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding-top: 10px;
+    text-align: center;
+    width: 300px;
+    height: 600px;
+    float: right;
     background-color: #423D3C;
     font-size: 20px;
     animation-name:from0to100;
@@ -70,6 +92,11 @@ img:hover
     width:750px ;
     animation-name:from0to100 ;
     animation-duration: 4s;
+}
+
+#imgContainer > img
+{
+    animation: doABarrelRoll 2s;
 }
 
 span > img
@@ -122,8 +149,63 @@ footer
 }
 
 
+select
+{
+    background-color: #423D3C;
+    border-color: #423D3C;
+    color:white;
+    font-family: 'Fondamento', cursive;
+    -webkit-appearance: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+option
+{
+    text-align: center;
+}
+
+select:focus
+{
+    outline: none;
+}
+
+#changeButton
+{
+    width: 100px;
+    height: 40px;
+    background-color: #594D4D;
+    font-size: 14px;
+    font-family: 'Fondamento', cursive;
+    color: white;
+    border: none;
+}
+
+#changeButton:focus
+{
+    outline: none;
+    background-color: #4F4449;
+}
+
+#changeButton:hover
+{
+    background-color: #4F4449;
+}
+
+#changeButton:active
+{
+    opacity: 0.5;
+}
+
+
 @keyframes from0to100
 {
     from{opacity: 0%;}
     to{opacity: 100%;}
+}
+
+@keyframes doABarrelRoll
+{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
 }

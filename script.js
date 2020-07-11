@@ -1,16 +1,47 @@
 var n = 1;
 var intNumberToRemove = 1;
 var rollHistory = document.getElementById("rollHistory");
+var changeButton = document.getElementById("changeButton");
 // Do not change this Variables
+
+
 
 var highest = 'green';
 var lowest = 'red';
 var normal = 'white';
 // U can use this variables to change color of the lowest and highest roll.
 
+
+function test(){
+    var listHighest = document.getElementById("highest");
+    var usersChoiceForHighest = listHighest.options[listHighest.selectedIndex].text;
+    var listLowest = document.getElementById("lowest");
+    var usersChoiceForLowest = listLowest.options[listLowest.selectedIndex].text;
+    highest = usersChoiceForHighest;
+    lowest = usersChoiceForLowest;
+}
+
+
+
+
+function reset_animation(dice) {
+    var el = document.getElementById(dice);
+    el.style.animation = 'none';
+    el.offsetHeight; /* trigger reflow */
+    el.style.animation = null; 
+  }
+
+//This function resets rolling Animation
+
 function removeElement(elementId) {
     document.getElementById(elementId).remove();
  }
+
+ function removeElementAnimation(elementId) {
+    document.getElementById(elementId).style.animationDuration.remove();
+    document.getElementById(elementId).style.animationName.remove();
+ }
+
 
 //This function removes specified element by it's ID
 
@@ -36,6 +67,8 @@ function roll(highestNumber){
 
 function roll4(){
     rollingSound();
+   // document.getElementById("d4").style.animation = "doABarrelRoll 2s";
+    reset_animation("d4");
     setTimeout(rolld4, 2000);
     function rolld4(){
         let rollinf = roll(4);
@@ -69,12 +102,14 @@ function roll4(){
                 break;
             }
         }
+     
     }
     
     
 
 function roll6(){
     rollingSound();
+    reset_animation("d6");
     setTimeout(rolld6, 2000);
     function rolld6(){
         let rollinf = roll(6);
@@ -114,6 +149,7 @@ function roll6(){
 
 function roll8(){
     rollingSound();
+    reset_animation("d8");
     setTimeout(rolld8, 2000);
     function rolld8(){
         let rollinf = roll(8);
@@ -153,6 +189,7 @@ function roll8(){
 
 function roll10(){
     rollingSound();
+    reset_animation("d10");
     setTimeout(rolld10, 2000);
     function rolld10(){
         let rollinf= roll(10);
@@ -192,6 +229,7 @@ function roll10(){
 
 function roll12(){
     rollingSound();
+    reset_animation("d12");
     setTimeout(rolld12, 2000);
     function rolld12(){
         let rollinf = roll(12);
@@ -232,6 +270,7 @@ function roll12(){
 
 function roll20(){
     rollingSound();
+    reset_animation("d20");
     setTimeout(rolld20, 2000);
     function rolld20(){
         let rollinf = roll(20);
@@ -271,6 +310,7 @@ function roll20(){
 
 function roll100(){
     rollingSound();
+    reset_animation("d100");
     setTimeout(rolld100, 2000);
     function rolld100(){
         let rollinf = roll(100);

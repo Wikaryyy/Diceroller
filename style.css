@@ -185,22 +185,27 @@ select:focus
 {
     width: 100px;
     height: 40px;
-    background-color: #594D4D;
+    background-color: #545054;
     font-size: 14px;
     font-family: 'Fondamento', cursive;
     color: white;
     border: none;
+    -webkit-box-shadow: 10px 10px 26px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 26px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 26px -6px rgba(0,0,0,0.75);
 }
 
 #changeButton:focus
 {
     outline: none;
-    background-color: #4F4449;
+    background-color: #545054;
 }
 
 #changeButton:hover
 {
-    background-color: #4F4449;
+    width: 101px;
+    height: 41px;
+    background-color: #545054;
 }
 
 #changeButton:active

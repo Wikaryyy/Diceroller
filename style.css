@@ -9,6 +9,9 @@ body
 header
 {
     width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header > h1
@@ -35,12 +38,6 @@ header > h1
     animation-name:from0to100;
     animation-duration: 4s;
 }
-
-label
-{
-    color:white;
-}
-
 
 #right
 {
@@ -118,7 +115,6 @@ span > img
     animation-duration: 2s;
 }
 
-
 #circle
 {
     margin-top:140px ;
@@ -159,7 +155,6 @@ footer:hover
     cursor: pointer;
 }
 
-
 select
 {
     background-color: #423D3C;
@@ -169,6 +164,14 @@ select
     -webkit-appearance: none;
     font-size: 20px;
     text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px black;
+}
+
+label
+{
+    color:white;
+    text-shadow: 2px 2px black;
 }
 
 option
@@ -193,6 +196,7 @@ select:focus
     -webkit-box-shadow: 10px 10px 26px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 26px -6px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 26px -6px rgba(0,0,0,0.75);
+    text-shadow: 2px 2px black;
 }
 
 #changeButton:focus
@@ -212,7 +216,6 @@ select:focus
 {
     opacity: 0.5;
 }
-
 
 @keyframes from0to100
 {

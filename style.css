@@ -6,9 +6,17 @@ body
     margin-right: auto;
 }
 
+.flexer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
 header
 {
-    width: 1000px;
+    
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -66,7 +74,7 @@ aside > h1
 {
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    
 }
 
 img
@@ -74,7 +82,8 @@ img
     height: 100px;
     width: 100px;
     opacity: 0.5;
-    
+    max-width:100%;
+   
 }
 
 img:focus
@@ -92,9 +101,10 @@ img:hover
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width:750px ;
     animation-name:from0to100 ;
     animation-duration: 4s;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #imgContainer > img
@@ -147,7 +157,10 @@ footer
 {
     text-align: center;
     color: white;
+    margin-left: auto;
+    margin-right: auto;
     text-shadow: 2px 2px black;
+
 }
 
 footer:hover
@@ -227,4 +240,68 @@ select:focus
 {
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
+}
+
+@media(max-width:1339px)
+{
+    .flexer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #right
+    {
+        margin-left: auto;
+        margin-right: auto;
+        align-items: flex-start;
+    }
+
+    #left
+    {
+        margin-left: auto;
+        margin-right: auto;
+        align-items: flex-end;
+    }
+
+    #container
+    {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 720px;
+    }
+
+    #circle
+    {
+        margin-top:140px ;
+      
+        text-align: center;
+        color:white;
+        text-shadow: 2px 2px black;
+        padding-top: 50px;
+        font-size: 45px;
+        width: 167px;
+        height: 114px;
+        background-color: #545054;
+        border-radius: 360px;
+        -webkit-box-shadow: 14px 13px 22px -12px rgba(0,0,0,0.75);
+        -moz-box-shadow: 14px 13px 22px -12px rgba(0,0,0,0.75);
+        box-shadow: 14px 13px 22px -12px rgba(0,0,0,0.75);
+
+    }
+    
+    #imgContainer
+    {
+        margin-top: 50px;
+        animation-name:from0to100 ;
+        animation-duration: 4s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        max-height:100%
+    }
+   
 }

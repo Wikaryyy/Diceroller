@@ -14,7 +14,9 @@
   </head>
 
   <body>
-                              <header><h1>Dice Roller</h1></header>
+      <header><h1>Dice Roller</h1></header>
+      <div class="flexer">
+                            
                               
         <aside id="left">
                                      <h1>Roll History</h1>
@@ -24,7 +26,30 @@
 
         </aside>
 
-        <aside id="right">
+      <div id="container">
+          
+                                        
+          <main>
+            
+                                                <div id="circle"></div>
+              
+                                <div id="rollInformation">Choose the dice to roll!</div>
+
+
+              <div id="imgContainer">
+                    <img src="dices/d4.png" alt="d4" id="d4" onclick="rollDice('D4', 4)" focusable="false">
+                    <img src="dices/d6.png" alt="d6" id="d6" onclick="rollDice('D6', 6)" focusable="false">
+                    <img src="dices/d8.png" alt="d8" id="d8" onclick="rollDice('D8', 8)" focusable="false">
+                    <img src="dices/d10.png" alt="d10" id="d10" onclick="rollDice('D10', 10)" focusable="false">
+                    <img src="dices/d12.png" alt="d12" id="d12" onclick="rollDice('D12', 12)" focusable="false">
+                    <img src="dices/d20.png" alt="d20" id="d20" onclick="rollDice('D20', 20)" focusable="false">
+                    <img src="dices/d100.png" alt="d100" id="d100" onclick="rollDice('D100', 100)" focusable="false">
+              </div>
+
+          </main>
+      </div>  
+
+       <aside id="right">
                                       <h1>Options</h1>
 
             <form>
@@ -54,32 +79,11 @@
             </form>
 
         </aside>
-
-      <div id="container">
-          
-                                        
-          <main>
-            
-                                                <div id="circle"></div>
-              
-                                <div id="rollInformation">Choose the dice to roll!</div>
-
-
-              <div id="imgContainer">
-                    <img src="dices/d4.png" alt="d4" id="d4" onclick="rollDice('D4', 4)" focusable="false">
-                    <img src="dices/d6.png" alt="d6" id="d6" onclick="rollDice('D6', 6)" focusable="false">
-                    <img src="dices/d8.png" alt="d8" id="d8" onclick="rollDice('D8', 8)" focusable="false">
-                    <img src="dices/d10.png" alt="d10" id="d10" onclick="rollDice('D10', 10)" focusable="false">
-                    <img src="dices/d12.png" alt="d12" id="d12" onclick="rollDice('D12', 12)" focusable="false">
-                    <img src="dices/d20.png" alt="d20" id="d20" onclick="rollDice('D20', 20)" focusable="false">
-                    <img src="dices/d100.png" alt="d100" id="d100" onclick="rollDice('D100', 100)" focusable="false">
-              </div>
-
-          </main>
-          
-      </div>  
       
-      <footer><h1 onclick="email()">Website was made by: Wikary 1986</h1></footer>
+      
+
+      </div>
+                              <footer><h1 onclick="email()">Website was made by: Wikary 1986</h1></footer>
 
       <script src="script.js"></script>
   </body>
